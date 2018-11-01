@@ -95,6 +95,6 @@ describe("Tinh so du STK", () => {
         true,
         "t00"
       )
-    ).toBe(10041667);
+    ).toBe(10092917);
   });
 });
