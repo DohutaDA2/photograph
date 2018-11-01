@@ -801,4 +801,4 @@ const calculate = (
   return Math.round(balance);
 };
 
-export { calculate };
+export { calculate, calculateLimit, calculateUnLimit, getDurationDays, getDurationMonths };
