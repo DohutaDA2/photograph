@@ -1,0 +1,157 @@
+.Button {
+  display: block;
+  background-color: transparent;
+  border: none;
+  color: #ca752d;
+  outline: none;
+  font-family: Arial;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 10;
+  margin: auto;
+  margin-top: 10px;
+  width: -webkit-fill-available;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease-in-out;
+  min-width: 100px;
+}
+
+.Button:disabled {
+  color: #7f7f7f;
+  background-color: #f1f1f1;
+  cursor: not-allowed;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.PrimaryOrange {
+  background: #fff;
+  border: solid 1px #fff;
+  color: #d65219;
+  box-shadow: 0px 4px 10px -2px rgb(0, 0, 0, 0.7);
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.SecondaryOrange {
+  border: solid 1px #fff;
+  background-color: #d65219;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.PrimaryGreen {
+  border: solid 1px #559900;
+  background: #559900;
+  color: #fff;
+  box-shadow: 0px 3px 5px 0px #c2c2c2;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.SecondaryGreen {
+  border: solid 1px;
+  background-color: #fff;
+  color: #559900;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.Button:hover {
+  background-color: #f3cdad;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.SecondaryGreen:hover,
+.PrimaryGreen:hover {
+  background-color: #76ad32;
+  border: solid 1px #76ad32;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.SecondaryOrange:hover,
+.PrimaryOrange:hover {
+  background-color: #e18233;
+  border: solid 1px #fff;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.OK {
+  display: block;
+  margin: auto;
+  border: solid 1px #3b5998;
+  background-color: #3b5998;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.OK:hover {
+  border: solid 1px #3b5998;
+  background-color: #5772aa;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.Cancel {
+  display: block;
+  margin: auto;
+  border: solid 1px #3b5998;
+  background-color: #ffffff;
+  color: #3b5998;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.Cancel:hover {
+  border: solid 1px #3b5998;
+  background-color: #5772aa;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.Action {
+  max-width: 100px;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0, 1);
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0;
+  border-radius: 6px;
+}
+
+.Action:hover {
+  background-color: rgb(0, 0, 0, 0.05);
+}
+
+@media screen and (min-width: 960px) {
+  .Button {
+    max-width: 600px;
+    margin-top: 20px;
+  }
+
+  .Action {
+    max-width: 70px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .Button {
+    max-width: 300px;
+    margin-top: 10px;
+  }
+
+  .Action {
+    max-width: 40px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .Button {
+    width: 200px;
+    margin-top: 10px;
+  }
+
+  .Action {
+    width: 40px;
+    margin: 0;
+  }
+}

@@ -1,0 +1,105 @@
+.Card{
+  display: block;
+  margin: 10px;
+  padding: 25px;
+  /* box-shadow: 0px 2px 8px 2px rgba(0,0,0,0.2); */
+  border-radius: 5px;
+  background-color: #f3f3f3;
+  transition: 0.3s;
+}
+
+.Card:hover{
+  box-shadow: 0 3px 8px 0px rgba(0,0,0,0.2);
+}
+
+.ButtonMore{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: #333;
+  float: right;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 15px;
+  border: none;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.ButtonMore:hover{
+  background: #dbdbdb;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.Name{
+  display: block;
+  font-size: large;
+  font-weight: 600;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.Table{
+  width: 100%;
+}
+
+.Balance{
+  text-align: end;
+  font-weight: 500;
+}
+
+/* .Cell{
+  display: inline-block;
+  width: 25%;
+  margin: auto;
+  vertical-align: -webkit-baseline-middle;
+} */
+
+.Cell{
+  display: inline-block;
+  width: 25%;
+  vertical-align: -webkit-baseline-middle;
+}
+
+@media screen and (min-width: 960px){
+  .Card{
+    /* width: 800px; */
+    /* margin: 10px auto; */
+    /* padding: 20px; */
+  }
+
+  .CellLeft{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 960px){
+  .Cell{
+    width: 25%;
+  }
+
+  .CellLeft{
+    text-align: center;
+  }
+
+  .Row .Card{
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 570px){
+  .Cell{
+    width: 50%;
+  }
+  
+  .CellRight{
+    text-align: right;
+  }
+
+  .CellLeft{
+    text-align: left;
+  }
+
+  .Row .Card{
+    width: 100%;
+  }
+}

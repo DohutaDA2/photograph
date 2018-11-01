@@ -1,0 +1,13 @@
+.ModalIcon {
+  color: red;
+  display: block;
+  margin: auto;
+}
+
+.ModalMessage {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 20px auto 20px auto;
+}

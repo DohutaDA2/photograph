@@ -1,0 +1,33 @@
+.BoxLogin{
+  display: block;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  top: 20%;
+  max-width: 300px;
+}
+
+.LoginTitle{
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.ModalIcon{
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: auto;
+  padding-bottom: 40px;
+  text-align: center;
+  color: red;
+  font-size: -webkit-xxx-large;
+}
+
+.ModalMessage{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 20px auto 20px auto;
+}

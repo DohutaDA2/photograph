@@ -1,0 +1,51 @@
+.Title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.Icon {
+  width: 32px;
+}
+
+.ActionBar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid #cecece;
+  border-radius: 12px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.InfoZone {
+  border: 1px solid #cecece;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.Row {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+
+.Header {
+  width: 48%;
+  text-align: right;
+}
+
+.Content {
+  width: 52%;
+  text-align: left;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  .InfoZone {
+    padding: 20px 0 20px 0;
+  }
+}
