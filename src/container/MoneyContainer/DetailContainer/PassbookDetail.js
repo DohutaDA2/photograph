@@ -7,6 +7,7 @@ import moment from "moment";
 import classes from "./PassbookDetail.css";
 import { formatNum } from "../../../hoc/business/refineUI";
 import { getLogs, calculate } from "../../../hoc/business/business";
+import * as images from "../../../hoc/images";
 
 class PassbookDetail extends Component {
   state = {
@@ -43,35 +44,35 @@ class PassbookDetail extends Component {
         config: {
           disabled: false
         },
-        icon: "edit"
+        icon: images.edit
       },
       withdraw: {
         name: "Rút bớt",
         config: {
           disabled: false
         },
-        icon: "withdraw"
+        icon: images.withdraw
       },
       deposit: {
         name: "Gửi thêm",
         config: {
           disabled: false
         },
-        icon: "deposit"
+        icon: images.deposit
       },
       accounting: {
         name: "Tất toán",
         config: {
           disabled: false
         },
-        icon: "accounting"
+        icon: images.accounting
       },
       closing: {
         name: "Thoát",
         config: {
           disabled: false
         },
-        icon: "exit"
+        icon: images.exit
       }
     }
   };
@@ -238,7 +239,7 @@ class PassbookDetail extends Component {
         <div style={{ display: "column" }}>
           <img
             className={classes.Icon}
-            src={require(`../../../resources/images/${action.config.icon}.png`)}
+            src={action.config.icon}
             alt={action.config.name}
           />
           <p style={{ margin: "0", marginTop: "10px" }}>{action.config.name}</p>
@@ -345,7 +346,7 @@ class PassbookDetail extends Component {
               </div>
               <div className={classes.Row}>
                 <span className={classes.Header}>Số dư</span>
-                <span className={classes.Content} style={{fontWeight:'700'}}>
+                <span className={classes.Content} style={{ fontWeight: "700" }}>
                   {formatNum(this.state.passbook.realBalance || 0)} đ
                 </span>
               </div>
