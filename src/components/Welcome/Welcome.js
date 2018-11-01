@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import classes from "./Welcome.css";
 import Button from "../UI/Button/Button";
 import Layout from "../../hoc/Layout/Layout";
-import logo from "../../resources/images/logo2.png";
+// import logo from "../../resources/images/logo2.png";
+import {logo} from '../../hoc/image';
 
 export default class Welcome extends Component {
   firstTimeHandler = () => {
